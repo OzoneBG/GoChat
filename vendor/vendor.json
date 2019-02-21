@@ -9,6 +9,12 @@
 			"revisionTime": "2018-03-26T21:05:44Z"
 		},
 		{
+			"checksumSHA1": "c//wUUHFTjUFshMO7TKJKD+1W+g=",
+			"path": "github.com/gorilla/websocket",
+			"revision": "7c8e298727d149d7c329b4dec7e94e1932ac5c11",
+			"revisionTime": "2018-12-18T07:24:45Z"
+		},
+		{
 			"checksumSHA1": "THwjSMfHZhIQfAeq77bvO+R5qpg=",
 			"path": "github.com/stretchr/codecs",
 			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
