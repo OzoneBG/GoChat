@@ -1,0 +1,137 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "z20a4tPnX/C9PUk383JQdDR3AyM=",
+			"path": "github.com/clbanning/x2j",
+			"revision": "5e605d46809c441eb0e565867b63f7d80c9140c2",
+			"revisionTime": "2018-03-26T21:05:44Z"
+		},
+		{
+			"checksumSHA1": "THwjSMfHZhIQfAeq77bvO+R5qpg=",
+			"path": "github.com/stretchr/codecs",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "ufA6C5U8ksJCdnLi7PRFsGpxKjs=",
+			"path": "github.com/stretchr/codecs/bson",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "MxowjSl/kbyd/ByFVOvY7pAQMRI=",
+			"path": "github.com/stretchr/codecs/constants",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "zfwn7+5wmc7VJSHj7yqwsvFHnYk=",
+			"path": "github.com/stretchr/codecs/csv",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "fIICXqee6c0tfufJP6+2M/mAq1Q=",
+			"path": "github.com/stretchr/codecs/json",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "spdJe9seJJVoJgNTTkEXzo6dUQk=",
+			"path": "github.com/stretchr/codecs/jsonp",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "cG23K5IAk2LdHQHQmoZ0Uw1NQh4=",
+			"path": "github.com/stretchr/codecs/msgpack",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "+s10IIUgc2yJcIKDcIAkDByfilY=",
+			"path": "github.com/stretchr/codecs/services",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"path": "github.com/stretchr/codecs/servies",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "xjoztytYBUk99LpabhxEi5krWVg=",
+			"path": "github.com/stretchr/codecs/xml",
+			"revision": "04a5b1e1910de7aaf00e1d4419d2508247fba1b4",
+			"revisionTime": "2017-04-03T06:32:45Z"
+		},
+		{
+			"checksumSHA1": "EZSVcMBIvrBy4iYLjVMwCmBpL0w=",
+			"path": "github.com/stretchr/gomniauth",
+			"revision": "4b6c822be2eb64551618722ff80cecde4d63d9be",
+			"revisionTime": "2017-07-17T12:35:14Z"
+		},
+		{
+			"checksumSHA1": "HP+LCfxem4A2/M4/Keeic2kcjPw=",
+			"path": "github.com/stretchr/gomniauth/common",
+			"revision": "4b6c822be2eb64551618722ff80cecde4d63d9be",
+			"revisionTime": "2017-07-17T12:35:14Z"
+		},
+		{
+			"checksumSHA1": "jcjrRAB2Lgu5+UvEzOUADF6q6OY=",
+			"path": "github.com/stretchr/gomniauth/oauth2",
+			"revision": "4b6c822be2eb64551618722ff80cecde4d63d9be",
+			"revisionTime": "2017-07-17T12:35:14Z"
+		},
+		{
+			"checksumSHA1": "llc+m2UgiP2t3YxPx/LR/aMrYpo=",
+			"path": "github.com/stretchr/gomniauth/providers/google",
+			"revision": "4b6c822be2eb64551618722ff80cecde4d63d9be",
+			"revisionTime": "2017-07-17T12:35:14Z"
+		},
+		{
+			"checksumSHA1": "cGdAB6BagGibIVSiJfZ5zmSYTKQ=",
+			"path": "github.com/stretchr/objx",
+			"revision": "c61a9dfcced1815e7d40e214d00d1a8669a9f58c",
+			"revisionTime": "2019-02-11T16:23:28Z"
+		},
+		{
+			"checksumSHA1": "nXjKXmq8p+2PM6+leDYJE3Ckztc=",
+			"path": "github.com/stretchr/signature",
+			"revision": "168b2a1e1b562bf381d47471e31f5979a2a51cd5",
+			"revisionTime": "2016-01-04T13:21:43Z"
+		},
+		{
+			"checksumSHA1": "/SBzCT2oQ2SJs+z3/4Mf9KB0a2o=",
+			"path": "github.com/stretchr/stew/strings",
+			"revision": "80ef0842b48b329a6120607c817a85aff5a2ec71",
+			"revisionTime": "2013-08-12T19:02:56Z"
+		},
+		{
+			"checksumSHA1": "EEzxE07kbt68yxpWYzUnYEG4T9s=",
+			"path": "github.com/stretchr/tracer",
+			"revision": "66d3696bba973e1697f7d68413b3f19c6d6e2a7c",
+			"revisionTime": "2014-01-24T18:41:52Z"
+		},
+		{
+			"checksumSHA1": "RY7vJfJNX8K+bek5PkqZwPnzDP4=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": "e444a5086c436778cf9281a7059a3d58b9e17935",
+			"revisionTime": "2019-02-04T20:13:41Z"
+		},
+		{
+			"checksumSHA1": "Np/IH5aN4KNgY+8MBEYV2ewgExI=",
+			"path": "gopkg.in/mgo.v2/bson",
+			"revision": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5",
+			"revisionTime": "2018-07-05T11:36:04Z"
+		},
+		{
+			"checksumSHA1": "9tMleZvl/yjpkj7oO3pOfZc+MJw=",
+			"path": "gopkg.in/mgo.v2/internal/json",
+			"revision": "9856a29383ce1c59f308dd1cf0363a79b5bef6b5",
+			"revisionTime": "2018-07-05T11:36:04Z"
+		}
+	],
+	"rootPath": "chat"
+}
