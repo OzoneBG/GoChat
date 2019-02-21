@@ -45,7 +45,7 @@ func main() {
 		google.New(
 			"199014956970-cubjkv0gs3qd37kvl2k29t2rcd33tl1j.apps.googleusercontent.com",
 			"_a2tOls2gp-F8KrAjIMpEbLW",
-			"http://localhost:8080/auth/callback/google"),
+			"http://gochatr.ddns.net/auth/callback/google"),
 	)
 
 	r := newRoom()
@@ -53,6 +53,16 @@ func main() {
 	http.Handle("/login", &templateHandler{filename: "login.html"})
 	http.HandleFunc("/auth/", loginHandler)
 	http.Handle("/room", r)
+	http.HandleFunc("/logout", func(w http.ResponseWriter, r *http.Request) {
+		http.SetCookie(w, &http.Cookie{
+			Name:   "auth",
+			Value:  "",
+			Path:   "/",
+			MaxAge: -1,
+		})
+		w.Header().Set("Location", "/chat")
+		w.WriteHeader(http.StatusTemporaryRedirect)
+	})
 
 	go r.run()
 
