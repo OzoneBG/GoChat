@@ -8,11 +8,15 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/stretchr/gomniauth/common"
+
 	"github.com/stretchr/objx"
 
 	"github.com/stretchr/gomniauth"
 	"github.com/stretchr/gomniauth/providers/google"
 )
+
+var env string
 
 type templateHandler struct {
 	once     sync.Once
@@ -36,16 +40,30 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	t.templ.Execute(w, data)
 }
 
+func getGoogleProvider() common.Provider {
+	clientID := "199014956970-cubjkv0gs3qd37kvl2k29t2rcd33tl1j.apps.googleusercontent.com"
+	secret := "_a2tOls2gp-F8KrAjIMpEbLW"
+
+	var callbackURL string
+	if env == "production" {
+		callbackURL = "http://gochatr.ddns.net/auth/callback/google"
+	} else if env == "development" {
+		callbackURL = "http://localhost:8080/auth/callback/google"
+	}
+
+	return google.New(clientID, secret, callbackURL)
+}
+
 func main() {
 	var addr = flag.String("addr", ":8080", "The addr of the application")
+	envFlag := flag.String("env", "development", "Current environment")
 	flag.Parse()
+
+	env = *envFlag
 
 	gomniauth.SetSecurityKey("myverysecretkey")
 	gomniauth.WithProviders(
-		google.New(
-			"199014956970-cubjkv0gs3qd37kvl2k29t2rcd33tl1j.apps.googleusercontent.com",
-			"_a2tOls2gp-F8KrAjIMpEbLW",
-			"http://gochatr.ddns.net/auth/callback/google"),
+		getGoogleProvider(),
 	)
 
 	r := newRoom()
