@@ -55,8 +55,8 @@ func getGoogleProvider() common.Provider {
 }
 
 func main() {
-	var addr = flag.String("addr", ":8080", "The addr of the application")
-	envFlag := flag.String("env", "development", "Current environment")
+	var addr = flag.String("addr", ":80", "The addr of the application")
+	envFlag := flag.String("env", "production", "Current environment")
 	flag.Parse()
 
 	env = *envFlag
