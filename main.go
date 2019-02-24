@@ -66,7 +66,7 @@ func main() {
 		getGoogleProvider(),
 	)
 
-	r := newRoom()
+	r := newRoom(UseGravatar)
 	http.Handle("/", MustAuth(&templateHandler{filename: "chat.html"}))
 	http.Handle("/login", &templateHandler{filename: "login.html"})
 	http.HandleFunc("/auth/", loginHandler)
