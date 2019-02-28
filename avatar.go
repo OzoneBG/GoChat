@@ -1,11 +1,9 @@
 package main
 
 import (
-	"crypto/md5"
 	"errors"
-	"fmt"
-	"io"
-	"strings"
+	"io/ioutil"
+	"path"
 )
 
 // ErrNoAvatarURL is the error that is returned when the
@@ -41,17 +39,39 @@ type GravatarAvatar struct{}
 var UseGravatar GravatarAvatar
 
 func (GravatarAvatar) GetAvatarURL(c *client) (string, error) {
-	email, ok := c.userData["email"]
+	userID, ok := c.userData["user_id"]
 	if !ok {
 		return "", ErrNoAvatarURL
 	}
 
-	emailStr, ok := email.(string)
+	userIDStr, ok := userID.(string)
 	if !ok {
 		return "", ErrNoAvatarURL
 	}
 
-	m := md5.New()
-	io.WriteString(m, strings.ToLower(emailStr))
-	return fmt.Sprintf("//www.gravatar.com/avatar/%x", m.Sum(nil)), nil
+	return "//www.gravatar.com/avatar/" + userIDStr, nil
+}
+
+type FileSystemAvatar struct{}
+
+var UseFileSystemAvatar FileSystemAvatar
+
+func (FileSystemAvatar) GetAvatarURL(c *client) (string, error) {
+	if userid, ok := c.userData["user_id"]; ok {
+		if useridStr, ok := userid.(string); ok {
+			files, err := ioutil.ReadDir("avatars")
+			if err != nil {
+				return "", ErrNoAvatarURL
+			}
+			for _, file := range files {
+				if file.IsDir() {
+					continue
+				}
+				if match, _ := path.Match(useridStr+"*", file.Name()); match {
+					return "/avatars/" + file.Name(), nil
+				}
+			}
+		}
+	}
+	return "", ErrNoAvatarURL
 }
