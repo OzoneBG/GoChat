@@ -9,10 +9,22 @@
 			"revisionTime": "2018-03-26T21:05:44Z"
 		},
 		{
+			"checksumSHA1": "aENNVxKxF9h9PfvTIstiAS5I3Lg=",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "d8f796af33cc11cb798c1aaeb27a4ebc5099927d",
+			"revisionTime": "2018-08-30T19:11:22Z"
+		},
+		{
 			"checksumSHA1": "c//wUUHFTjUFshMO7TKJKD+1W+g=",
 			"path": "github.com/gorilla/websocket",
 			"revision": "7c8e298727d149d7c329b4dec7e94e1932ac5c11",
 			"revisionTime": "2018-12-18T07:24:45Z"
+		},
+		{
+			"checksumSHA1": "R3yk3OJzuq4MVfVGX5AhkkYv1ko=",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "5d4384ee4fb2527b0a1256a821ebfc92f91efefc",
+			"revisionTime": "2018-12-26T10:54:42Z"
 		},
 		{
 			"checksumSHA1": "THwjSMfHZhIQfAeq77bvO+R5qpg=",
@@ -113,6 +125,30 @@
 			"path": "github.com/stretchr/stew/strings",
 			"revision": "80ef0842b48b329a6120607c817a85aff5a2ec71",
 			"revisionTime": "2013-08-12T19:02:56Z"
+		},
+		{
+			"checksumSHA1": "ODT0DIK1uxcFyrAbOc/M2WKXMhs=",
+			"path": "github.com/stretchr/testify",
+			"revision": "3f658bd5ac42cc0b5de5b427e95a480d5726ea76",
+			"revisionTime": "2019-01-05T14:54:40Z"
+		},
+		{
+			"checksumSHA1": "mxiWiEVfABl242qEZ6SBc870uf8=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "3f658bd5ac42cc0b5de5b427e95a480d5726ea76",
+			"revisionTime": "2019-01-05T14:54:40Z"
+		},
+		{
+			"checksumSHA1": "D4bXPof9qSyXm4ZssBn6J5/FX0U=",
+			"path": "github.com/stretchr/testify/http",
+			"revision": "3f658bd5ac42cc0b5de5b427e95a480d5726ea76",
+			"revisionTime": "2019-01-05T14:54:40Z"
+		},
+		{
+			"checksumSHA1": "ONUuIIIDv4obbePli++dUDGYm4M=",
+			"path": "github.com/stretchr/testify/mock",
+			"revision": "3f658bd5ac42cc0b5de5b427e95a480d5726ea76",
+			"revisionTime": "2019-01-05T14:54:40Z"
 		},
 		{
 			"checksumSHA1": "EEzxE07kbt68yxpWYzUnYEG4T9s=",

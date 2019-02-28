@@ -14,6 +14,7 @@ import (
 	gomniauthcommon "github.com/stretchr/gomniauth/common"
 )
 
+// ChatUser represents the user internally
 type ChatUser interface {
 	UniqueID() string
 	AvatarURL() string
