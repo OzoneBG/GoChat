@@ -17,6 +17,10 @@ import (
 )
 
 var env string
+var avatars Avatar = TryAvatars{
+	UseFileSystemAvatar,
+	UseAuthAvatar,
+	UseGravatar}
 
 type templateHandler struct {
 	once     sync.Once
@@ -66,7 +70,7 @@ func main() {
 		getGoogleProvider(),
 	)
 
-	r := newRoom(UseFileSystemAvatar)
+	r := newRoom()
 	http.Handle("/", MustAuth(&templateHandler{filename: "chat.html"}))
 	http.Handle("/login", &templateHandler{filename: "login.html"})
 	http.HandleFunc("/auth/", loginHandler)
